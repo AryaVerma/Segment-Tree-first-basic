@@ -32,7 +32,9 @@ class Fenwick{
     }
     public:
     int query(int i,int j)
+    {
         return prefix(j)-prefix(i-1);
+    }
 };
 int main()
 {
